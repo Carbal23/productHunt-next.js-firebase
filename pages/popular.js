@@ -5,9 +5,9 @@ import Noproduct from "@/components/layout/Noproduct";
 import Loading from "@/components/ui/Spinner";
 import useOrderProduct from "@/hooks/useOrderProduct";
 
-export default function Home() {
+export default function Popular() {
   
-  const {products, loading} = useOrderProduct("created");
+  const {products, loading} = useOrderProduct("votes");
 
   return (
     <>
